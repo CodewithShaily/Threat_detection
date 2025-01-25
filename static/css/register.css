@@ -1,0 +1,247 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]
+*/
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url('../fonts/OpenSans/OpenSans-Regular.ttf'); 
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]
+*/
+
+* {
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: OpenSans-Regular, sans-serif;
+    background-color: #121212; /* Sleek black background */
+    color: #e0e0e0; /* Light gray for text */
+}
+
+/*---------------------------------------------*/
+a {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #0dcaf0; /* Vibrant blue links */
+    margin: 0px;
+    transition: all 0.4s;
+}
+
+a:hover {
+    color: #06b5d4; /* Slightly darker blue for hover */
+    text-decoration: none;
+}
+
+/*---------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+p {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #b0b0b0; /* Softer gray for paragraphs */
+    margin: 0px;
+}
+
+/*---------------------------------------------*/
+input {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #e0e0e0; /* Text inside input fields */
+}
+
+textarea {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #e0e0e0;
+}
+
+textarea:focus, input:focus {
+    border-color: transparent !important;
+    box-shadow: 0 0 5px #0dcaf0; /* Blue glow on focus */
+}
+
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder { 
+    color: #888888;
+}
+
+/*---------------------------------------------*/
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+    transition: background-color 0.4s;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+iframe {
+    border: none !important;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Utility ]
+*/
+
+.txt1 {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #b0b0b0;
+}
+
+.txt2 {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #0dcaf0;
+}
+
+.hov1:hover {
+    text-decoration: underline;
+    color: #06b5d4;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]
+*/
+
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-login100 {
+    width: 100%;  
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #121212; /* Black theme background */
+}
+
+.wrap-login100 {
+    width: 500px;
+    background: #1f1f1f; /* Darker gray background for the form */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+}
+
+/*==================================================================
+[ Form ]
+*/
+
+.login100-form {
+    width: 100%;
+    padding: 30px;
+}
+
+.login100-form-title {
+    display: block;
+    font-family: OpenSans-Regular;
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*------------------------------------------------------------------
+[ Input ]
+*/
+
+.wrap-input100 {
+    width: 100%;
+    position: relative;
+    background-color: #2c2c2c; /* Dark gray input background */
+    border: 1px solid #3a3a3a; /* Subtle border */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border-color 0.4s;
+}
+
+.input100 {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #e0e0e0;
+    padding: 0 20px;
+}
+
+.wrap-input100:focus-within {
+    border-color: #0dcaf0; /* Highlighted border on focus */
+}
+
+/*------------------------------------------------------------------
+[ Button ]
+*/
+
+.container-login100-form-btn {
+    width: 100%;
+    display: flex;
+}
+
+.login100-form-btn {
+    width: 100%;
+    height: 50px;
+    background-color: #0dcaf0; /* Vibrant blue button */
+    border-radius: 8px;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    transition: background-color 0.4s;
+}
+
+.login100-form-btn:hover {
+    background-color: #06b5d4; /* Slightly darker blue for hover */
+}
+
+/*------------------------------------------------------------------
+[ Alert ]
+*/
+
+.error {
+    background-color: #ff4d4d; /* Bright red error box */
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.error p {
+    color: #ffffff;
+    margin: 0;
+}
+
+.field_label {
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+/* Autofill background fix */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px #2c2c2c inset !important;
+    -webkit-text-fill-color: #e0e0e0 !important;
+}
