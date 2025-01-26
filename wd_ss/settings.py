@@ -156,7 +156,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT ='/opt/render/project/src/staticfiles/'                 #os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
     BASE_DIR / "static"
@@ -165,9 +165,9 @@ STATICFILES_DIRS = [
 # MEDIA_ROOT= 'static/images'
 
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'images')
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'images')
 
-MEDIA_URL = '/static/images/'
+#MEDIA_URL = '/static/images/'
 
 
 
